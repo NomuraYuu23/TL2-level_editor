@@ -25,6 +25,8 @@ from .file_name import OBJECT_PT_file_name
 from .collider import OBJECT_PT_collider
 from .disabled import MYADDON_OT_add_disabled
 from .disabled import OBJECT_PT_disabled
+from .spawn import MYADDON_OT_spawn_import_symbol
+from .spawn import MYADDON_OT_spawn_create_symbol
 
 #アドオン有効化時コールバック
 def register():
@@ -66,6 +68,8 @@ classes = (
     MYADDON_OT_add_filename,
     MYADDON_OT_add_collider,
     MYADDON_OT_add_disabled,
+    MYADDON_OT_spawn_import_symbol,
+    MYADDON_OT_spawn_create_symbol,
     OBJECT_PT_file_name,
     OBJECT_PT_collider,
     OBJECT_PT_disabled,

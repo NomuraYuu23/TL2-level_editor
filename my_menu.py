@@ -18,6 +18,7 @@ bl_info = {
 from .stretch_vertex import MYADDON_OT_stretch_vertex
 from .create_ico_sphere import MYADDON_OT_create_ico_sphere
 from .export_scene import MYADDON_OT_export_scene
+from .spawn import MYADDON_OT_spawn_create_symbol
 
 #トップバーの拡張メニュー
 class TOPBAR_MT_my_menu(bpy.types.Menu):
@@ -38,6 +39,9 @@ class TOPBAR_MT_my_menu(bpy.types.Menu):
         self.layout.separator()
         self.layout.operator(MYADDON_OT_export_scene.bl_idname,
                               text=MYADDON_OT_export_scene.bl_label)
+        self.layout.separator()
+        self.layout.operator(MYADDON_OT_spawn_create_symbol.bl_idname,
+                              text=MYADDON_OT_spawn_create_symbol.bl_label)
 
     #既存のメニューの描画
     def submenu(self, context):
