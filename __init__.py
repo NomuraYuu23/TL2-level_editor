@@ -23,6 +23,8 @@ from .add_collider import MYADDON_OT_add_collider
 from .my_menu import TOPBAR_MT_my_menu
 from .file_name import OBJECT_PT_file_name
 from .collider import OBJECT_PT_collider
+from .disabled import MYADDON_OT_add_disabled
+from .disabled import OBJECT_PT_disabled
 
 #アドオン有効化時コールバック
 def register():
@@ -63,6 +65,8 @@ classes = (
     MYADDON_OT_export_scene,
     MYADDON_OT_add_filename,
     MYADDON_OT_add_collider,
+    MYADDON_OT_add_disabled,
     OBJECT_PT_file_name,
     OBJECT_PT_collider,
+    OBJECT_PT_disabled,
 )
